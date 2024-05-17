@@ -1,0 +1,23 @@
+/* Todo navegador vem com uma estilização por padrão (CSS). Então nós queremos um CSS totalmente do zero,
+por isso devemos usar um CSS reset para poder estarmos aptos a escrever nosso código de maneira limpa, sem
+estilizações. */
+/* Aqui usamos o "*" para podermos colocar nosso CSS reset. Podemos usar o margin: 0, o padding: 0 e o 
+text-decoration: none. Existem vários CSS reset, códigos prontos, completos e complexos, mas não utilizaremos*/
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.pai {
+    width: 50%;
+    height: 300px;
+    background-color: blue;
+}
+
+.filho {
+    width: 50%;
+    height: 50%;
+    background-color: black;
+}

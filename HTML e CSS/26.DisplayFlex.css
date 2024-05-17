@@ -1,0 +1,78 @@
+/* Ele é um pouco mais complexo que os outros displays porque permite manipular os objetos de outras maneiras. O Flex
+sempre será inserido no bloco pai e será refletido no posicionamento dos blocos filhos. Inicialmente quando inserimos
+um display flex ele coloca os elementos filhos lado a lado */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+/* Iremos colocar o display: flex no pai e isso irá refletir em todos os filhos inseridos nele. Ao inserir todos os blocos
+ficarão lado a lado, Veja o exemplo a baixo. Mas utilizar somente o display flex não será muito comum, geralmente utilizaremos
+outras propriedades do display flex. */
+/* Uma das propriedades do display flex é o flex-direction. Ele vai definir qual a direação dos nossos itens. O valor default
+é o flex-direction: row (Linha). O valor flex-direction: row-reverse vai jogar os elementos para o lado contrário. */
+.pai {
+    width: 700px;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Uma das propriedades do display flex é o flex-direction. Ele vai definir qual a direação dos nossos itens. O valor default
+é o flex-direction: row (Linha). O valor flex-direction: row-reverse vai jogar os elementos para o lado contrário. */
+/* Existe o flex-direction: columns. Que coloca em colunas e o flex-direction: columns-reverse, que coloca invertido */
+.pai2 {
+    width: 700px;
+    height: 300px;
+    background-color: black;
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* O justify-content pode ter vários valores. O justify-start por exemplo vai assumir o posicionamento inicial do bloco do pai.
+O Justify-content: end joga os itens para o final, porém sem inverter a ordem dos itens como no row-reverse.*/
+/*  O Justify-content: center coloca os itens no centro, horizontalmente. */
+/* O Justify-content: space-between separa os nossos itens ao máximo entre si, horizontalmente. */
+/* O Justify-content: space-around separa os nossos itens entre si ao máximo, porem com um espaçamento lateral, em ambos os lados */
+/* O Justify-content: space-evenly separa os nossos itens entre si ao máximo, com um espaçamento lateral identico aos demais, diferente
+do anterior*/
+/* TODOS os justify organizam nossos itens HORIZONTALMENTE */
+
+/* Temos também o align-items, basicamente ele manipula os eventos como o Justify-content, porém nesse caso, VERTICALMENTE*/
+/* Align-items: flex-start (default), elementos ficam em cima */
+/* Align-items: flex-end, elementos ficam embaixo */
+/* Align-items: center, elementos ficam no centro, verticalmente */
+.pai3 {
+    width: 700px;
+    height: 300px;
+    background-color: black;
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.filho {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid red;
+}
+
+.filho2 {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid red;
+}
+
+.filho3 {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid red;
+}

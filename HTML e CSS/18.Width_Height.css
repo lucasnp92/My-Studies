@@ -1,0 +1,19 @@
+/* Aqui utilizamos o .pai para chamar a minha classe div que foi criada no arquivo HTML. Depois usamos o
+Width e o Height para definiar a Largura (Width) e Altura (Height) */
+
+.pai {
+    width: 50%;
+    height: 300px;
+    background-color: blue;
+}
+
+/* A unidade de medida em % é relativa, e vai levar sempre em consideração o tamanho do pai do
+nosso elemento. Abaixo é um exemplo que demonstra que a medida se baseia na % do arquivo pai, 
+ver o exemplo abaixo (50% da largura e 50% da altura)
+/* A div filho esta dentro da div pai, por isso ele vai se basear nas medidas dele*/
+
+.filho {
+    width: 50%;
+    height: 50%;
+    background-color: black;
+}

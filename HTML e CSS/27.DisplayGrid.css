@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+/* O Display Grid assim como o display flex será inserido no elemento pai alterando a disposição em tela do elemento filho*/
+
+/* Vamos utilizar o grid-template-columns. Aqui conbseguimos dividr o nosso elemento pai em colunas. Por exemplo:
+grid-template-columns: 1fr 1fr 1fr (fração), aqui fica em 3 colunas. Podemos utilizar essa repetição de 1fr 1fr de outra forma,
+veja o Exemplo: grid-template-columns: 20% 10% 70%. (Ou px tbm) Ou até mesmo abreviar com o proximo exemplo: 
+grid-template-columns: repeat (3, 1fr) - Aqui a coluna vai se repetir 3x*/
+
+/* Temos tambem o grid-template-rows, que basicamente vai servir com a quantidade de linhas que teremos, e usamos da mesma forma
+que o columns */
+
+/* Utilizar os elementos em 100% de largura e 100% de altura não siginificam que os elementos estarão totalmente coloados.
+Aqui temos o gap, onde podemos utilizar o distancimento entre colunas e linhas. Como no exemplo abaixo, usando o column-gap 
+(distanciamento das colunas) e o row-gap (distanciamento entre linhas) */
+.pai {
+    width: 700px;
+    height: 300px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+/* Para exemplificar melhor essa aula usamos o width e o height em 100% para ficar mais bem entendido */
+.filho {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid red;
+}

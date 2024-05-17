@@ -1,0 +1,43 @@
+- O que é Lógica de Porgramção?
+    É um conjunto de técnicas e conhecimentos que utilizamos para colocar instruções, informações em uma sequência
+    lógica, para chegarmos a um resultado.
+
+    As linguagens de programção, apesar de serem diversas, são bastante recicláveis, ou seja, é possível por meio do
+    conhecimento de uma linguagem aprender outras linguagens com muito mais facilidade.
+
+- O que é um algoritmo?
+    O algoritmo é basicamente a sequência lógica criada por meio da lógica de programção.
+    
+    Exemplo de sequência lógica:
+    1. Colocar e-mail e senha
+    2. Clicar no botão de entrar
+    3. Mudar o status para logado
+    4. Exibir mensagem de bem-vindo
+
+- Hardware e Software
+    O Hardware são os componentes físicos da minha máquina
+
+    O Software é o sistema que roda em cima dos meu componentes físicos passando instruções, por meio de algoritmos,
+    estes por sua vez são escritos com as linguagens de programção.
+
+- 3 tipos principais de linguagens:
+    1. Linguagem de máquina - É uma linguagem compreendida apenas pelos computadores. São sistemas binários (bits) 0 e 1
+
+    2. Linguagens de baixo nível - Chegam perto da linguagem de máquinas, não é tão facilmente compreedida pelos seres humanos,
+    mas não é uma linguagem de máquina. Assembly é uma linguagem de baixo nível
+
+    3. Linguagens de alto nível - São nessas linguagens que iremos programar, onde podemos entender e criar nosso algoritmo.
+    Javascript, Python, C++, PHP, etc...
+
+    Quando escrevemos nossos sistemas, nossos softwares, eles terão um conjunto de pastas de arquivos, que terão nossas extensões.
+    Esse conjunto de pastas de arquivos nós iremos chamá-los de CÓDIGO FONTE. Porém, a máquina não compreende a linguagem de alto
+    nível do nosso código fonte, para isso precisamos converter nosso código fonte por meio da COMPILAÇÃO e a INTERPRETAÇÃO.
+
+    Qual a diferença entre compilado e interpretado?
+        - Compilado -> O nosso código fonte ele é convertido/compilado em um ou mais arquivos que são compreendidos pela máquina, 
+        eles ficam salvos e depois estes arquivos são executados. Como esse arquivo é compilado? Através de um terceiro, um Software
+        compilador.
+
+        - Interpretado -> Conforme a gente vai interpretando, traduzindo, o nosso código fonte, o processo ocorre ao mesmo tempo
+        que a demanda é necessária, não será salvo arquivos. Tradução -> Interpretação. Como esse arquivo é interpretado? Através
+        de um terceiro, um Software interpretador, o Javascript por exemplo

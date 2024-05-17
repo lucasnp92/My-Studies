@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+/* A propriedade display vai servir basicamente para dizer como nosso elemento deve se comportar em tela */
+/* Vamos ver 4 tipos de display, o inline */
+/* O 1ª é o inline - Ele vai colocar dois elementos lado a lado, porém ele não permite configurar uma largura e uma altura
+para o nosso elemento, veja o exemplo a seguir, onde o meu elemento .minhadiv tem configuração de altura e largura, porém,
+ele não aceita esse tipo de atributo*/
+.minhadiv {
+    width: 300px;
+    height: 300px;
+    background-color: maroon;
+    display: inline;
+    color: blue;
+}
+/* O 2ª é o inline-block - Ele coloca os elementos lado a lado porém esse permite você colocar altura e largura */
+.minhadiv2 {
+    width: 200px;
+    height: 200px;
+    background-color: palegreen;
+    display: inline-block;
+}
+
+/* O 3ª é o block - É como se fosse o tipo de display padrão (default), onde ele adiciona uma quebra de linha em cada elemento
+ficando um em cima do outro */
+.minhadiv3 {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    display: block;
+    color: white;
+}
+
+/* O 4ª é o none - É simplesmente a ausência de display, é como se ele deixasse de existir em nosso arquivo html */
+/* Existem outros dois displays que são mais complexos e que por isso vamos estudar em outra aula, que são o: flex e grid */

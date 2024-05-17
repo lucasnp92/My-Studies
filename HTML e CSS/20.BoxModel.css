@@ -1,0 +1,43 @@
+/* <!-- Tudo no html e nas paginas web funcionam em blocos, são blocos dentro de outros blocos ao lado de outros */
+/* blocos --> */
+/* <!-- Precisamos aprender sobre as propriedades dos blocos. Vamos aprender o margin, o padding e border --> */
+
+/* <!-- 1º: O Margin é o distanciamento de um elemento com relação aos elementos que estão fora dele. --> */
+/* 2º: O Padding é bem parecido com o margin, porém aqui o distanciamento é para com os elementos que estão
+dentro dele, nesse caso os elementos vão mais para dentro*/
+/* 3º: O Border primeiro vamos definir qual a largura que teremos em nossa borda, depois o tipo de borda
+e depois a cor que queremos para nossa borda */
+
+* {
+    margin: 0px;
+}
+
+/* Se eu adicionar um único valor margin ou padding nesse meu bloco divpai ele vai colocar borda em 
+todo o meu bloco
+*/
+/* Posso utilizar o margin top para a parte de cima, o margin bottom para a parte debaixo, o margin left
+para a esquerda, e o margin right para o lado direito */
+/* Se eu colocar dois valores no meu margin, como por exemplo: margin: 50px 40px; o valor de 50px será
+adicionado para CIMA e para BAIXO, e o valor de 40px para ESQUERDA e para a DIREITA  */
+/* Se eu colocar 4 valores no meu margin ele vai adicionar na seguinte ordem: CIMA, DIREITA, BAIXO e ESQUERDA
+veja o exemplo abaixo */
+
+.divpai {
+    width: 300px;
+    height: 500px;
+    background-color: blue;
+    margin: 10px 20px 30px 40px; /*CIMA-10px, BAIXO-20px, ESQUERDA-30px, DIREITAS-40px*/
+    padding: 15px;
+}
+
+.divfilho {
+    width: 50px;
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+    border: 2px solid white; /*Primeiro escolhemos a largura, o tipo e depois a cor da borda, nesse caso
+    3px, solid (tipo) e branco)*/
+    /* Temos a borda SOLID, DOUBLE, DOTTED, DASHED e várias outras */
+    border-radius: 5px; /* O border-radius é uma propriedade do border, que basicamente é o arredondamento
+    da borda. Se colocarmos 50% teremos um círculo perfeito*/
+}

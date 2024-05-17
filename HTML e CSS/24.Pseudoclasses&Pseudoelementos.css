@@ -1,0 +1,47 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+/* Pseudoclasses é basicamente uma palavra que adicionamos nos nossos seletores css para apontar um estado especial
+ do nosso elemento html */
+ /* 1ª - hover - Ele vai adicionar um novo css no nosso elemento quando passamos o mouse em cima do nosso objeto,
+ ver o exemplo abaixo em .minhadiv:hover */
+ /* É possível acrescentar uma transição para que essa ação fique mais sutil, veja o exemplo abaixo no código transition. */
+ .minhadiv {    
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    transition: 1s;
+ }
+/* Aqui vemos a nossa pseudoclasse, onde colocamos para mudar a cor do nosso objeto após a ação desejada. */
+/* Essa é provavelmente a pseudoclasse que mais vamos utilizar no nosso dia-a-dia por exemplo. No caso das pseudoclasses,
+nós utilizamos o ':' */
+ .minhadiv:hover {
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+ }
+ /* 2ª - disabled - Ele vai simplesmente desativar um elemento, onde ele vai aplicar uma estilização no momento
+ em que ele for desativado. Para isso é imporatnte usar o disabled no input no arquivo 24.Pseudoclasses.html. */
+ .input {
+    border: 1px solid black;
+    position: relative;
+    top: 10px;
+ }
+
+ .input:disabled {
+    border-color: red;
+ }
+ /* Pseudoelementos nós interagimos com um pseudoelemento, que criamos. Os principais é o AFTER e o BEFORE.
+ No caso dos pseudoelementos nós utilizamos o '::' */
+ /* 1ª - before - Aqui nós vamos colocar um elemento antes da nossa tag. Vamos colocar uma tag de ancora no html,
+ veja o exemplo no 24.Pseudoclasses.html*/
+ .input2::before {
+   content: '→';
+ }
+ /* 2ª - after - Aqui nós vamos colocar um elemento depois da nossa tag. Existem diversas maneiras de interagir
+ com o nosso pseudoelemento. */
+ .input2::after {
+   content: '◄'
+ }

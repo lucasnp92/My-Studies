@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags de Midia</title>
+</head>
+<body>
+    <!-- Tags de mídia são basicamente TAGS de inserção de mídia -->
+<!-- 
+    Na tag img usamos o atributo src que é caminho que vamos passar a nossa imagem.Nesse caso utilizamos
+    o “./” para poder escolher a pasta onde está ou o “../” caso eu queira voltar para uma pasta anterior -->
+    <img src="./midia/CRVascodaGama.png" style="display: block;" />
+
+<!-- 
+    Na tag vídeo vamos utilizar o atributo controls para termos acesso a todos os tipos de controle do vídeo,
+    como pausar, dar play, etc. Ele nao recebe valor algum. Depois vamos usar a tag source com o atributo src
+    para assim chamar o vídeo para o nosso HTML. No atributo type vamos colocar o tipo de arquivo a ser 
+    utilizado, por exemplo se eu importar um arquivo .mp4 o atributo ficaria: type=”video/mp4”. -->
+    <video controls style="width: 50%; border-radius: 10px;"> 
+        <source src="./midia/Esperei anciosamente - final.mp4" type="video/mp4">
+        Seu navegador não possui suporte para vídeos
+    </video>
+
+    <audio controls>
+        <source src="./midia/Regi e Lucas.mp3" type="audio/mpeg">
+        Seu navegador não possui suporte para audio
+    </audio>
+    <button onclick=""></button>
+
+</body>
+</html>    

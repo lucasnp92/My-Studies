@@ -1,0 +1,35 @@
+/* Temos dois tipos principais de unidade de medida, a ABSOLUTA e a RELATIVA. Vamos utilizar 4 que estão
+dentro dessas principais. */
+/* A 1ª unidade é o px (pixel), é a unica que é absoluta */
+h2 {
+    font-size: 20px;
+    color: aquamarine;
+}
+
+/* A 2ª unidade é o rem, que é relativa, por isso depende de outro valor, depende do tamanha padrão do meu
+HTML, ela vem por padrão 16px, porém eu posso definir meu HTML como 20px, ver exemplo abaixo */
+
+html {
+ font-size: 30px;
+}
+
+/* Veja que aqui eu coloquei 3rem, isso significa que o font size 20px, definidido por mim no meu HTML, foi
+multiplicado por 3. 1rem é uma vez a medida do meu padrão que é 20, 2rem seria 2x o meu padrão, etc.*/
+/* Números quebrados podem ser utilizados no rem */
+h3 {
+    font-size: 3rem;
+    color: red;
+}
+
+/* A 3ª unidade é o "em", é uma unidade relativa, e também herda um valor, porém, ele não herda o valor
+padrão do html. Ele vai herdar da tag que é o pai dele, ver o arquivo UnidadeDeMedida.html, para ver o exemplo
+ */
+ /* A tag pai é o div, onde eu defini o valor padrão de 13px, nesse caso o 4em é o 13 x 4, que dá 52px */
+
+ div {
+    font-size: 13px;
+ }
+ h4 {
+    font-size: 4em;
+    color: blue;
+ }

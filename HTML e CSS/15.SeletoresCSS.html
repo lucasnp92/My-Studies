@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Seletores CSS</title>
+    <!-- Seletores CSS são basicamente como vamos selecionar os elementos HTML dentro do CSS ou JavaScript para 
+    poder estilizar ou dar vida a esses elementos. -->
+    <!-- Basicamente são 3 seletores que utilizaremos no nosso dia-a-dia
+    O 1º é pelo nome da Tag, o 2º é pela Class e o 3º é pelo ID -->
+
+<style>
+    /* O primeiro seletor é o header, ela não é a melhor maneira de chamar um elemento, porque se eu tenho
+    mais de um header na minha aplicação, ele ira mudar todos. Quando eu tenho um seletor que tem o nome
+    da tag ele vai estilizar todos os headers.*/
+    header{background-color: red;
+
+    }
+
+    /* O segundo seletor é chamar os elementos por meio da classe, por exemplo o meu header poode ser
+    um header class="header1" por exemplo, ver abaixo o header1 e o header 2 e o codigo deles la embaixo*/
+    /* Para chamar a classe eu preciso escrever .onomedaclasse (.header1 e .header2 nesse caso) */
+
+    .header1 {
+        background-color: black;
+        color: white;
+    }
+
+    .header2 {
+        background-color: blue;
+        color: white;
+    }
+
+    /* O terceiro seletor é por meio de um id, por exemplo, o meu header pode ser chamado de
+    id=headerGrande, ver abaixo */
+    /* Para chamar o id eu preciso escrever #onomedoid (#headerGrande nesse caso, o # e o seletor que 
+    representa o nosso id) */
+
+    #headerGrande {
+        background-color: brown;
+        color: white;
+        height: 200px;
+    }
+
+</style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <a href="https://youtube.com" target="_blank">
+                    <li>Youtube</li>
+                </a>
+                <li>Contatos</li>
+                <li>Fotos</li>
+            </ul>
+        </nav>
+    </header>
+
+    <header class="header1">
+        <nav>
+            <ul>
+                <a href="https://youtube.com" target="_blank">
+                    <li>Youtube</li>
+                </a>
+                <li>Contatos</li>
+                <li>Fotos</li>
+            </ul>
+        </nav>
+    </header>
+
+    <header class="header2">
+        <nav>
+            <ul>
+                <a href="https://youtube.com" target="_blank">
+                    <li>Youtube</li>
+                </a>
+                <li>Contatos</li>
+                <li>Fotos</li>
+            </ul>
+        </nav>
+    </header>
+
+    <header id="headerGrande">
+        <nav>
+            <ul>
+                <a href="https://youtube.com" target="_blank">
+                    <li>Youtube</li>
+                </a>
+                <li>Contatos</li>
+                <li>Fotos</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

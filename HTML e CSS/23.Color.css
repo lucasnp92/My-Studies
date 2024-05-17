@@ -1,0 +1,24 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 200vh;
+    width: 200vw;
+}
+
+.minhadiv {
+    height: 500px;
+    width: 500px;
+    /* Chamar as cores apenas pelo nome delas nos torna limitados para alguns tons de cores */
+    /* Existem outras maneiras de atribuir uma cor:
+    1ª - Hexadecimal, usamos o background-color: #valor (#000 - preto, sendo o primeiro 0 o RED, o segundo GREEN e 
+    o terceiro o BLUE, #fff - branco. Existem ferramentas na internet que nos ajudam achar as cores hexadecimais de maneira
+    mais facil, um deles é o site "w3 picker color") */
+        background-color: #9999ff;
+    /* 2ª - RGB, usamos o background-color: rgb(10, 10, 10) */
+    /* 3ª - RGBA, usamos o background-color rgba(10, 10, 10, 0,5). Ela é bem igual ao rgb, porem esse quarto valor é para
+    definir a opacidade da cor, esse valor vai de 0 a 1, sendo 0 totalmente transparente e 1 totalmente opaco  */
+}

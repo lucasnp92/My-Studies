@@ -1,0 +1,55 @@
+/* O position vai definir como nosso elemente vai se posicionar e se comportar na tela, são 5 tipos de positions, 
+e por padrão ele vem com o position static */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Esse 200vh (View Height) na minha altura estou simplesmente dizendo que a altura do meu body será de 100% da minha tela,
+se eu colocar 200vh estou dizendo que será 200% (2x) da minha tela e consequentemente, aparecerá um scroll */
+/* A mesma coisa vale para a largura (width), 100vw (View Width) */
+body {
+    height: 200vh;
+    width: 200vw;
+}
+
+/* O position FIXED vai definir o elemento que vai ficar fixo. Ele sempre leva em consideração o limite da minha tela.
+Para posicionar o elemento nesse caso eu preciso utilizar outras quatras propriedades para posicionar o meu elemento, 
+são eles: O TOP, o BOTTOM, o LEFT e o RIGHT. Se eu utilizar o TOP siginifica que eu quero o quanto eu vou ter de 
+distanciamento do meu top, o limite da minha tela */
+
+.minhadiv {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+}
+
+/* O position STICKY (pegajoso) é muito parecido com o position fixed, porém, ele gruda na posição marcada, ao rolar
+o scroll da tela, já o fixed adota a posição já no primeiro momento */
+.minhadiv2 {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: sticky;
+    top: 10px;
+}
+
+ /* O position RELATIVE vai levar em consideração a sua posição atual, vai levar em consideração o limite do bloco, de si mesmo*/
+ .minhadiv3 {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    position: relative;
+    top: 100px;
+ }
+ /* O position ABSOLUTE pode se comportar de duas maneiras, dependendo de onde ele está inserido, se ele estiver dentro de um
+ elemento que possui o position static, então ele vai adotar o distancimento dos limtes da tela, mas se ele estiver dentro
+ de um elemento de position relativo, ele leva em consideração os limites elemento do pai, ver exemplo no 21.position.html */
+/* Esse abosulte faz parte do elemento .minhadiv3, que nesse caso é um elemento relative*/
+ .absolute {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    position: absolute;
+    top: 30px;
+ }

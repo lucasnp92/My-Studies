@@ -1,0 +1,34 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 200vh;
+    width: 200vw;
+}
+
+.minhadiv {
+    height: 500px;
+    width: 500px;
+    /* /* É possível colocar apenas background e o nome da cor para poder colocar um background. */
+    /* background-color: green; */
+    /* Existe tambem o background-image onde podemos colocar uma imagem de fundo do nosso bloco, podemos copiar um link
+    de um site para poder colocar entre aspas, ou utilizar o .nomedoarquivo, para poder colocar a imagem que esta salva
+    na mesma pasta do nosso projeto */
+    background-image: url('22.CRVascodaGama.png');
+
+    /* Para a imagem não repetir dentro do bloco, vamos utilizar o background-repeat: no-repeat. Existem outras propriedades
+    do background-repeat. */
+    background-repeat: no-repeat;
+
+    /* Para escolher o tamanho do nosso background utilizamos o background-size, onde temos as seguintes propriedades: 
+    1ª - A propriedade "contain" para ela ficar contida para obtermos o maximo de qualidade possível. 
+    2ª - A propriedade "auto" para adotar o valor inicial para aquela imagem.
+    3ª - A propriedade "cover" para ocupar todo o espaço daquele bloco.*/
+    background-size: auto;
+
+    /* O background-position vai receber dois valores, e isso vai definir o posicionamento da imagem no nosso bloco */
+    background-position: 50% 50%;
+}

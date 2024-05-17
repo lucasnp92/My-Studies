@@ -1,0 +1,35 @@
+/* Keyframes é a maneira como construimos animações com CSS */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Aqui utilizamos o animation: animacao (nome da animacao criada logo abaixo pelo @keyframe), para chamar a animacao
+do elemento .pai */
+/* Utilizamos tambem o elemento animation-duration: 5s, para definir o tempo de duração da minha animação*/
+.pai {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    animation: animacao;
+    animation-duration: 5s;
+}
+
+/* O @keyframe é o comando utilizado para criarmos o elemento, damos um nome a esse elemento e depois o estilizamos */
+/* Podemos utilizar o FROM e o TO, para definirmos de onde vai partir a animação e para onde ele vai, ou podemos utilizar
+o 0% - 100% para definir cada parte da animação, no exemplo abaixo o nosso bloco pai preto vai se transformando em um círculo
+azul e depois quando ele vira um circulo perfeito ele está na cor purple. */
+@keyframes animacao {
+    0% {
+        border-radius: 0;
+    }
+    50% {
+        border-radius: 25%;
+        background: blue;
+    }
+    100% {
+        border-radius: 50%;
+        background: purple;
+    }
+
+}
